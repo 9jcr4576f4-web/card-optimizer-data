@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-08",
+  "last_updated": "2026-08-09",
   "category_keywords": {
     "dining": ["restaurant", "dinner", "lunch", "takeout", "delivery"],
     "entertainment": ["broadway", "show", "concert", "theater", "movie", "tickets"],
@@ -21,6 +21,7 @@
           "name": "Chase Sapphire Reserve",
           "annual_fee": 795,
           "base_rate": 1,
+          "base_rate_unit": "points",
           "reward_categories": [
             {"category": "travel_direct", "rate": 4, "unit": "points", "cap_or_notes": "Direct bookings with airlines and hotel providers (not through Chase Travel)"},
             {"category": "dining", "rate": 3, "unit": "points", "cap_or_notes": "Includes eligible delivery and takeout"}
@@ -34,6 +35,7 @@
           "name": "Chase Sapphire Preferred",
           "annual_fee": 95,
           "base_rate": 1,
+          "base_rate_unit": "points",
           "reward_categories": [
             {"category": "dining", "rate": 3, "unit": "points", "cap_or_notes": "Includes takeout and eligible delivery"},
             {"category": "groceries", "rate": 3, "unit": "points", "cap_or_notes": "Online groceries only; excludes Target/Walmart/wholesale clubs"},
@@ -49,6 +51,7 @@
           "name": "Chase Freedom Unlimited",
           "annual_fee": 0,
           "base_rate": 1.5,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [
             {"category": "dining", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Includes takeout and delivery"},
             {"category": "drugstore", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Standalone pharmacy purchases"}
@@ -62,6 +65,9 @@
           "name": "Chase Freedom Flex",
           "annual_fee": 0,
           "base_rate": 1,
+          "base_rate_unit": "cashback_percent",
+          "rotating_category_rate": 5,
+          "rotating_category_unit": "cashback_percent",
           "reward_categories": [
             {"category": "dining", "rate": 3, "unit": "cashback_percent", "cap_or_notes": null},
             {"category": "drugstore", "rate": 3, "unit": "cashback_percent", "cap_or_notes": null}
@@ -75,6 +81,7 @@
           "name": "Prime Visa (Amazon)",
           "annual_fee": 0,
           "base_rate": 1,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [
             {"category": "groceries", "rate": 5, "unit": "cashback_percent", "cap_or_notes": "Amazon.com and Whole Foods; requires active Prime membership ($139/yr)"},
             {"category": "gas", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Direct pump and retail gas stations"},
@@ -96,6 +103,7 @@
           "name": "The Platinum Card from American Express",
           "annual_fee": 895,
           "base_rate": 1,
+          "base_rate_unit": "points",
           "reward_categories": [
             {"category": "travel_direct", "rate": 5, "unit": "points", "cap_or_notes": "Airfare booked directly with airlines (or via Amex Travel); capped at $500,000/year combined"}
           ],
@@ -108,6 +116,7 @@
           "name": "American Express Gold Card",
           "annual_fee": 325,
           "base_rate": 1,
+          "base_rate_unit": "points",
           "reward_categories": [
             {"category": "groceries", "rate": 4, "unit": "points", "cap_or_notes": "U.S. supermarkets, capped at $25,000/year, then 1x"},
             {"category": "dining", "rate": 4, "unit": "points", "cap_or_notes": "Worldwide, includes U.S. takeout and delivery"},
@@ -122,6 +131,7 @@
           "name": "Blue Cash Preferred Card from American Express",
           "annual_fee": 95,
           "base_rate": 1,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [
             {"category": "groceries", "rate": 6, "unit": "cashback_percent", "cap_or_notes": "U.S. supermarkets, capped at $6,000/year, then 1%"},
             {"category": "streaming", "rate": 6, "unit": "cashback_percent", "cap_or_notes": "Select U.S. streaming subscriptions"},
@@ -143,6 +153,7 @@
           "name": "Capital One Venture X Rewards Credit Card",
           "annual_fee": 395,
           "base_rate": 2,
+          "base_rate_unit": "points",
           "reward_categories": [],
           "special_earning_note": "Earns 5x-10x miles via Capital One Travel portal on flights/hotels/cars — not modeled here since this app only ranks direct, real-world spending. Everything else earns the 2x base rate.",
           "relationship_tiered": false,
@@ -153,6 +164,7 @@
           "name": "Capital One Venture Rewards Credit Card",
           "annual_fee": 95,
           "base_rate": 2,
+          "base_rate_unit": "points",
           "reward_categories": [],
           "special_earning_note": "Earns 5x miles via Capital One Travel portal on hotels/cars — not modeled here. Everything else earns the 2x base rate.",
           "relationship_tiered": false,
@@ -169,6 +181,7 @@
           "name": "Citi Double Cash Card",
           "annual_fee": 0,
           "base_rate": 2,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [],
           "special_earning_note": "Earns 5% via Citi Travel portal on hotels/cars/attractions — not modeled here. Structured as 1% at purchase + 1% as you pay it off.",
           "relationship_tiered": false,
@@ -179,6 +192,7 @@
           "name": "Citi Strata Premier Card",
           "annual_fee": 95,
           "base_rate": 1,
+          "base_rate_unit": "points",
           "reward_categories": [
             {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Booked directly with airlines and hotel chains"},
             {"category": "gas", "rate": 3, "unit": "points", "cap_or_notes": "Includes EV charging stations"},
@@ -194,6 +208,7 @@
           "name": "Citi Custom Cash (legacy, closed to new applicants)",
           "annual_fee": 0,
           "base_rate": 1,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [],
           "special_earning_note": "Automatically earns 5% cash back on whatever category you spent most in that billing cycle, up to the first $500 (then 1%). No activation needed, but which category is \"top\" can't be predicted in advance — check the Citi app to see this cycle's top category. Closed to new applicants as of May 2026; only relevant if you already hold one.",
           "relationship_tiered": false,
@@ -204,6 +219,7 @@
           "name": "Costco Anywhere Visa Card by Citi",
           "annual_fee": 0,
           "base_rate": 1,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [
             {"category": "gas", "rate": 4, "unit": "cashback_percent", "cap_or_notes": "Worldwide, capped at $7,000/year combined, then 1%"},
             {"category": "dining", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Also covers airfare, hotels, car rentals, cruise lines at 3%"},
@@ -224,6 +240,7 @@
           "name": "Wells Fargo Active Cash Card",
           "annual_fee": 0,
           "base_rate": 2,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [],
           "special_earning_note": null,
           "relationship_tiered": false,
@@ -240,6 +257,7 @@
           "name": "U.S. Bank Smartly Visa Signature Card",
           "annual_fee": 0,
           "base_rate": 2,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [],
           "special_earning_note": "Rate scales with U.S. Bank relationship balances: 2.5% at $5k+, 3% at $25k+, 4% at $100k+. Baseline shown here (2%) applies with no qualifying balance.",
           "relationship_tiered": true,
@@ -250,6 +268,7 @@
           "name": "U.S. Bank Cash+ Visa Signature Card",
           "annual_fee": 0,
           "base_rate": 1,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [],
           "special_earning_note": "Lets you choose 2 categories yourself for 5% cash back, up to $2,000 combined quarterly spend (then 1%), plus 2% on one everyday category (gas, grocery, or streaming) of your choice. Category picks are made by the cardholder at signup/quarterly, not fixed — enter your own chosen categories manually when adding this card.",
           "relationship_tiered": false,
@@ -266,6 +285,7 @@
           "name": "PNC Cash Unlimited Visa Signature Credit Card",
           "annual_fee": 0,
           "base_rate": 2,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [],
           "special_earning_note": null,
           "relationship_tiered": false,
@@ -276,6 +296,7 @@
           "name": "PNC Cash Rewards Visa Credit Card",
           "annual_fee": 0,
           "base_rate": 1,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [
             {"category": "gas", "rate": 4, "unit": "cashback_percent", "cap_or_notes": "Combined $8,000/year cap across the 4%/3%/2% categories, then 1%"},
             {"category": "dining", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Part of the same $8,000/year combined cap"},
@@ -296,6 +317,7 @@
           "name": "Truist Enjoy Cash Credit Card",
           "annual_fee": 0,
           "base_rate": 1,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [
             {"category": "gas", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Option A structure only; combined $1,000/month cap across gas, utilities, groceries"},
             {"category": "groceries", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Option A structure only; same $1,000/month combined cap"}
@@ -315,6 +337,7 @@
           "name": "Fifth Third 1.67% Cash/Back Credit Card",
           "annual_fee": 0,
           "base_rate": 1.67,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [],
           "special_earning_note": null,
           "relationship_tiered": false,
@@ -331,6 +354,7 @@
           "name": "Regions Prestige Visa Credit Card",
           "annual_fee": 0,
           "base_rate": 1,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [
             {"category": "dining", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Also covers entertainment merchants"},
             {"category": "gas", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Also covers groceries at 2%"}
@@ -350,6 +374,7 @@
           "name": "Navy Federal cashRewards / cashRewards Plus",
           "annual_fee": 0,
           "base_rate": 1.5,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [],
           "special_earning_note": "Rate rises to 2% (cashRewards Plus tier) with a qualifying direct deposit relationship at Navy Federal.",
           "relationship_tiered": true,
@@ -360,6 +385,7 @@
           "name": "Navy Federal Visa Signature Flagship Rewards",
           "annual_fee": 49,
           "base_rate": 2,
+          "base_rate_unit": "points",
           "reward_categories": [
             {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Airfare, hotels, transit, cruises"}
           ],
@@ -378,6 +404,7 @@
           "name": "PenFed Power Cash Rewards Visa Signature Card",
           "annual_fee": 0,
           "base_rate": 1.5,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [],
           "special_earning_note": "Rate rises to 2% with PenFed Honors Advantage status (military service or a PenFed Access America Checking account).",
           "relationship_tiered": true,
@@ -388,6 +415,7 @@
           "name": "PenFed Pathfinder Rewards Visa Signature Card",
           "annual_fee": 95,
           "base_rate": 1.5,
+          "base_rate_unit": "points",
           "reward_categories": [
             {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "3x for standard members, 4x for PenFed Honors Advantage members"}
           ],
@@ -406,6 +434,7 @@
           "name": "Citizens Cash Back Plus World Mastercard (legacy)",
           "annual_fee": 0,
           "base_rate": 1.8,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [],
           "special_earning_note": "Flat rate only. 1.9% instead of 1.8% with a Citizens Quest checking account. No longer open to new applicants — relevant only if you already hold one.",
           "relationship_tiered": true,
@@ -422,6 +451,9 @@
           "name": "Discover it Cash Back",
           "annual_fee": 0,
           "base_rate": 1,
+          "base_rate_unit": "cashback_percent",
+          "rotating_category_rate": 5,
+          "rotating_category_unit": "cashback_percent",
           "reward_categories": [],
           "special_earning_note": "5% cash back in rotating categories each quarter (up to $1,500/quarter, requires activation). Check the Discover app for current categories — not tracked here.",
           "relationship_tiered": false,
@@ -438,6 +470,7 @@
           "name": "Robinhood Gold Card",
           "annual_fee": 0,
           "base_rate": 3,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [],
           "special_earning_note": "Full 3% rate requires redeeming cash back as a Robinhood brokerage deposit (statement credits redeem at a lower effective rate, ~2.1%). Requires active Robinhood Gold membership ($5/mo or $50/yr). Also earns 5% via Robinhood Travel portal — not modeled here.",
           "relationship_tiered": false,
@@ -448,8 +481,11 @@
           "name": "Robinhood Platinum Card",
           "annual_fee": 695,
           "base_rate": 1,
-          "reward_categories": [],
-          "special_earning_note": "Invite-only. Earns 5-10% cash back, but only via Robinhood Travel portal bookings (hotels/cars at 10%, dining/flights booked through the portal at 5%) — not modeled here since this app only ranks direct, real-world spending. Non-portal spending earns just the 1% base rate.",
+          "base_rate_unit": "cashback_percent",
+          "reward_categories": [
+            {"category": "dining", "rate": 5, "unit": "cashback_percent", "cap_or_notes": null}
+          ],
+          "special_earning_note": "Invite-only. Also earns 5-10% cash back via the Robinhood Travel portal (hotels/rental cars at 10%, flights at 5%) — not modeled here since this app only ranks real-world, direct spending.",
           "relationship_tiered": false,
           "perks": ["$500/yr hotel credit", "$300/yr travel credit", "$250/yr DoorDash credit + DashPass", "$250/yr restaurant credit", "Function Health/Oura/Amazon One Medical subscription credits", "Unlimited Priority Pass lounge access"]
         }
@@ -464,6 +500,7 @@
           "name": "Apple Card",
           "annual_fee": 0,
           "base_rate": 1,
+          "base_rate_unit": "cashback_percent",
           "reward_categories": [
             {"category": "dining", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Select Apple Pay partner merchants only: Nike, Uber, Uber Eats, Walgreens, Panera, Ace Hardware, Exxon, Mobil"}
           ],
@@ -482,6 +519,7 @@
           "name": "Bilt Card (Cardless-issued lineup)",
           "annual_fee": 0,
           "base_rate": 1,
+          "base_rate_unit": "points",
           "reward_categories": [
             {"category": "dining", "rate": 3, "unit": "points", "cap_or_notes": null},
             {"category": "travel_direct", "rate": 2, "unit": "points", "cap_or_notes": "Airlines, hotels, car rentals, passenger transit"}
