@@ -1,0 +1,496 @@
+{
+  "last_updated": "2026-08-08",
+  "category_keywords": {
+    "dining": ["restaurant", "dinner", "lunch", "takeout", "delivery"],
+    "entertainment": ["broadway", "show", "concert", "theater", "movie", "tickets"],
+    "travel_direct": ["flight", "hotel", "airbnb", "rental car", "cruise"],
+    "rideshare_transit": ["uber", "lyft", "taxi", "subway", "train", "bus", "toll"],
+    "groceries": ["grocery", "supermarket", "whole foods", "trader joe's"],
+    "gas": ["gas", "fuel", "ev charging", "charging station"],
+    "drugstore": ["pharmacy", "cvs", "walgreens"],
+    "streaming": ["netflix", "spotify", "hulu", "disney+", "streaming"],
+    "warehouse_club": ["costco", "sam's club", "bj's"]
+  },
+  "issuers": [
+    {
+      "id": "chase",
+      "name": "Chase",
+      "cards": [
+        {
+          "id": "chase_sapphire_reserve",
+          "name": "Chase Sapphire Reserve",
+          "annual_fee": 795,
+          "base_rate": 1,
+          "reward_categories": [
+            {"category": "travel_direct", "rate": 4, "unit": "points", "cap_or_notes": "Direct bookings with airlines and hotel providers (not through Chase Travel)"},
+            {"category": "dining", "rate": 3, "unit": "points", "cap_or_notes": "Includes eligible delivery and takeout"}
+          ],
+          "special_earning_note": "Also earns 8x points via Chase Travel on qualifying hotel bookings — not modeled here since this app only ranks real-world, direct spending.",
+          "relationship_tiered": false,
+          "perks": ["$300 annual travel credit", "Priority Pass Select lounge access", "Primary auto rental CDW", "Trip cancellation/interruption insurance", "DoorDash DashPass access"]
+        },
+        {
+          "id": "chase_sapphire_preferred",
+          "name": "Chase Sapphire Preferred",
+          "annual_fee": 95,
+          "base_rate": 1,
+          "reward_categories": [
+            {"category": "dining", "rate": 3, "unit": "points", "cap_or_notes": "Includes takeout and eligible delivery"},
+            {"category": "groceries", "rate": 3, "unit": "points", "cap_or_notes": "Online groceries only; excludes Target/Walmart/wholesale clubs"},
+            {"category": "streaming", "rate": 3, "unit": "points", "cap_or_notes": "Select streaming services"},
+            {"category": "gas", "rate": 3, "unit": "points", "cap_or_notes": "Direct pump and EV charging"}
+          ],
+          "special_earning_note": "Also earns 5x points via Chase Travel — not modeled here.",
+          "relationship_tiered": false,
+          "perks": ["$50 annual Chase Travel hotel credit", "Primary auto rental CDW", "Trip delay reimbursement", "No foreign transaction fees"]
+        },
+        {
+          "id": "chase_freedom_unlimited",
+          "name": "Chase Freedom Unlimited",
+          "annual_fee": 0,
+          "base_rate": 1.5,
+          "reward_categories": [
+            {"category": "dining", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Includes takeout and delivery"},
+            {"category": "drugstore", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Standalone pharmacy purchases"}
+          ],
+          "special_earning_note": "Also earns 5% via Chase Travel — not modeled here.",
+          "relationship_tiered": false,
+          "perks": ["Purchase protection (120 days)", "Extended warranty protection", "Secondary auto rental CDW"]
+        },
+        {
+          "id": "chase_freedom_flex",
+          "name": "Chase Freedom Flex",
+          "annual_fee": 0,
+          "base_rate": 1,
+          "reward_categories": [
+            {"category": "dining", "rate": 3, "unit": "cashback_percent", "cap_or_notes": null},
+            {"category": "drugstore", "rate": 3, "unit": "cashback_percent", "cap_or_notes": null}
+          ],
+          "special_earning_note": "Also has 5% rotating quarterly categories (up to $1,500/quarter, requires activation) and 5% via Chase Travel. Neither is tracked here — check the Chase app for this quarter's picks.",
+          "relationship_tiered": false,
+          "perks": ["Cell phone protection up to $800 ($50 deductible)", "Purchase protection", "Extended warranty coverage"]
+        },
+        {
+          "id": "chase_amazon_prime_visa",
+          "name": "Prime Visa (Amazon)",
+          "annual_fee": 0,
+          "base_rate": 1,
+          "reward_categories": [
+            {"category": "groceries", "rate": 5, "unit": "cashback_percent", "cap_or_notes": "Amazon.com and Whole Foods; requires active Prime membership ($139/yr)"},
+            {"category": "gas", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Direct pump and retail gas stations"},
+            {"category": "dining", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Includes takeout and delivery"},
+            {"category": "rideshare_transit", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Rideshares, subways, buses, tolls"}
+          ],
+          "special_earning_note": "Also earns 5% via Chase Travel — not modeled here.",
+          "relationship_tiered": false,
+          "perks": ["No foreign transaction fees", "Travel and baggage protection", "Extended warranty protection"]
+        }
+      ]
+    },
+    {
+      "id": "american_express",
+      "name": "American Express",
+      "cards": [
+        {
+          "id": "amex_platinum",
+          "name": "The Platinum Card from American Express",
+          "annual_fee": 895,
+          "base_rate": 1,
+          "reward_categories": [
+            {"category": "travel_direct", "rate": 5, "unit": "points", "cap_or_notes": "Airfare booked directly with airlines (or via Amex Travel); capped at $500,000/year combined"}
+          ],
+          "special_earning_note": "Prepaid hotels earn 5x only when booked through Amex Travel — not modeled here.",
+          "relationship_tiered": false,
+          "perks": ["Global Lounge Collection (Centurion, Priority Pass, Delta Sky Club when flying Delta)", "$600/yr hotel credit ($300 semi-annually)", "$200/yr Uber Cash", "$200/yr airline fee credit", "$219/yr CLEAR Plus credit", "$300/yr digital entertainment credit", "No foreign transaction fees"]
+        },
+        {
+          "id": "amex_gold",
+          "name": "American Express Gold Card",
+          "annual_fee": 325,
+          "base_rate": 1,
+          "reward_categories": [
+            {"category": "groceries", "rate": 4, "unit": "points", "cap_or_notes": "U.S. supermarkets, capped at $25,000/year, then 1x"},
+            {"category": "dining", "rate": 4, "unit": "points", "cap_or_notes": "Worldwide, includes U.S. takeout and delivery"},
+            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Airfare booked directly with airlines or via Amex Travel"}
+          ],
+          "special_earning_note": null,
+          "relationship_tiered": false,
+          "perks": ["$120/yr dining credit ($10/mo, select partners)", "$120/yr Uber Cash", "$84/yr Dunkin' credit", "$100/yr Resy credit", "No foreign transaction fees"]
+        },
+        {
+          "id": "amex_blue_cash_preferred",
+          "name": "Blue Cash Preferred Card from American Express",
+          "annual_fee": 95,
+          "base_rate": 1,
+          "reward_categories": [
+            {"category": "groceries", "rate": 6, "unit": "cashback_percent", "cap_or_notes": "U.S. supermarkets, capped at $6,000/year, then 1%"},
+            {"category": "streaming", "rate": 6, "unit": "cashback_percent", "cap_or_notes": "Select U.S. streaming subscriptions"},
+            {"category": "gas", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "U.S. gas stations"},
+            {"category": "rideshare_transit", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Rideshares, parking, tolls, trains, buses"}
+          ],
+          "special_earning_note": null,
+          "relationship_tiered": false,
+          "perks": ["$84/yr Disney Bundle credit (enrollment required)", "Purchase protection", "Return protection"]
+        }
+      ]
+    },
+    {
+      "id": "capital_one",
+      "name": "Capital One",
+      "cards": [
+        {
+          "id": "capital_one_venture_x",
+          "name": "Capital One Venture X Rewards Credit Card",
+          "annual_fee": 395,
+          "base_rate": 2,
+          "reward_categories": [],
+          "special_earning_note": "Earns 5x-10x miles via Capital One Travel portal on flights/hotels/cars — not modeled here since this app only ranks direct, real-world spending. Everything else earns the 2x base rate.",
+          "relationship_tiered": false,
+          "perks": ["$300/yr Capital One Travel portal credit", "10,000 anniversary bonus miles", "Capital One Lounge + Priority Pass access", "Up to $100 Global Entry/TSA PreCheck credit (every 4 yrs)", "Cell phone protection", "No foreign transaction fees"]
+        },
+        {
+          "id": "capital_one_venture",
+          "name": "Capital One Venture Rewards Credit Card",
+          "annual_fee": 95,
+          "base_rate": 2,
+          "reward_categories": [],
+          "special_earning_note": "Earns 5x miles via Capital One Travel portal on hotels/cars — not modeled here. Everything else earns the 2x base rate.",
+          "relationship_tiered": false,
+          "perks": ["Up to $100 Global Entry/TSA PreCheck credit (every 4 yrs)", "Transfer miles to 15+ travel partners", "No foreign transaction fees"]
+        }
+      ]
+    },
+    {
+      "id": "citi",
+      "name": "Citi",
+      "cards": [
+        {
+          "id": "citi_double_cash",
+          "name": "Citi Double Cash Card",
+          "annual_fee": 0,
+          "base_rate": 2,
+          "reward_categories": [],
+          "special_earning_note": "Earns 5% via Citi Travel portal on hotels/cars/attractions — not modeled here. Structured as 1% at purchase + 1% as you pay it off.",
+          "relationship_tiered": false,
+          "perks": ["Option to convert cash back to Citi ThankYou Points"]
+        },
+        {
+          "id": "citi_strata_premier",
+          "name": "Citi Strata Premier Card",
+          "annual_fee": 95,
+          "base_rate": 1,
+          "reward_categories": [
+            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Booked directly with airlines and hotel chains"},
+            {"category": "gas", "rate": 3, "unit": "points", "cap_or_notes": "Includes EV charging stations"},
+            {"category": "groceries", "rate": 3, "unit": "points", "cap_or_notes": "U.S. and international grocery stores"},
+            {"category": "dining", "rate": 3, "unit": "points", "cap_or_notes": "Worldwide"}
+          ],
+          "special_earning_note": "Also earns 10x via Citi Travel portal — not modeled here.",
+          "relationship_tiered": false,
+          "perks": ["$100/yr hotel benefit (single stay $500+ via Citi Travel)", "No foreign transaction fees", "Transfer points to 14+ loyalty programs"]
+        },
+        {
+          "id": "citi_custom_cash_legacy",
+          "name": "Citi Custom Cash (legacy, closed to new applicants)",
+          "annual_fee": 0,
+          "base_rate": 1,
+          "reward_categories": [],
+          "special_earning_note": "Automatically earns 5% cash back on whatever category you spent most in that billing cycle, up to the first $500 (then 1%). No activation needed, but which category is \"top\" can't be predicted in advance — check the Citi app to see this cycle's top category. Closed to new applicants as of May 2026; only relevant if you already hold one.",
+          "relationship_tiered": false,
+          "perks": []
+        },
+        {
+          "id": "citi_costco_anywhere_visa",
+          "name": "Costco Anywhere Visa Card by Citi",
+          "annual_fee": 0,
+          "base_rate": 1,
+          "reward_categories": [
+            {"category": "gas", "rate": 4, "unit": "cashback_percent", "cap_or_notes": "Worldwide, capped at $7,000/year combined, then 1%"},
+            {"category": "dining", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Also covers airfare, hotels, car rentals, cruise lines at 3%"},
+            {"category": "warehouse_club", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Costco and Costco.com purchases; requires active Costco membership ($65/yr)"}
+          ],
+          "special_earning_note": "Cash back is paid out annually as a Costco reward certificate, not as ongoing statement credit.",
+          "relationship_tiered": false,
+          "perks": ["No foreign transaction fees", "Purchase protection"]
+        }
+      ]
+    },
+    {
+      "id": "wells_fargo",
+      "name": "Wells Fargo",
+      "cards": [
+        {
+          "id": "wells_fargo_active_cash",
+          "name": "Wells Fargo Active Cash Card",
+          "annual_fee": 0,
+          "base_rate": 2,
+          "reward_categories": [],
+          "special_earning_note": null,
+          "relationship_tiered": false,
+          "perks": ["Cell phone protection up to $600 ($25 deductible)", "Visa Signature concierge and travel privileges"]
+        }
+      ]
+    },
+    {
+      "id": "us_bank",
+      "name": "U.S. Bank",
+      "cards": [
+        {
+          "id": "us_bank_smartly",
+          "name": "U.S. Bank Smartly Visa Signature Card",
+          "annual_fee": 0,
+          "base_rate": 2,
+          "reward_categories": [],
+          "special_earning_note": "Rate scales with U.S. Bank relationship balances: 2.5% at $5k+, 3% at $25k+, 4% at $100k+. Baseline shown here (2%) applies with no qualifying balance.",
+          "relationship_tiered": true,
+          "perks": ["Visa Signature benefits package"]
+        },
+        {
+          "id": "us_bank_cash_plus",
+          "name": "U.S. Bank Cash+ Visa Signature Card",
+          "annual_fee": 0,
+          "base_rate": 1,
+          "reward_categories": [],
+          "special_earning_note": "Lets you choose 2 categories yourself for 5% cash back, up to $2,000 combined quarterly spend (then 1%), plus 2% on one everyday category (gas, grocery, or streaming) of your choice. Category picks are made by the cardholder at signup/quarterly, not fixed — enter your own chosen categories manually when adding this card.",
+          "relationship_tiered": false,
+          "perks": []
+        }
+      ]
+    },
+    {
+      "id": "pnc",
+      "name": "PNC Bank",
+      "cards": [
+        {
+          "id": "pnc_cash_unlimited",
+          "name": "PNC Cash Unlimited Visa Signature Credit Card",
+          "annual_fee": 0,
+          "base_rate": 2,
+          "reward_categories": [],
+          "special_earning_note": null,
+          "relationship_tiered": false,
+          "perks": ["Cell phone protection up to $800 ($50 deductible)", "No foreign transaction fees", "Purchase security (90 days)"]
+        },
+        {
+          "id": "pnc_cash_rewards",
+          "name": "PNC Cash Rewards Visa Credit Card",
+          "annual_fee": 0,
+          "base_rate": 1,
+          "reward_categories": [
+            {"category": "gas", "rate": 4, "unit": "cashback_percent", "cap_or_notes": "Combined $8,000/year cap across the 4%/3%/2% categories, then 1%"},
+            {"category": "dining", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Part of the same $8,000/year combined cap"},
+            {"category": "groceries", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Part of the same $8,000/year combined cap"}
+          ],
+          "special_earning_note": null,
+          "relationship_tiered": false,
+          "perks": ["Redeem directly into a PNC checking/savings account", "Zero liability fraud protection"]
+        }
+      ]
+    },
+    {
+      "id": "truist",
+      "name": "Truist Bank",
+      "cards": [
+        {
+          "id": "truist_enjoy_cash",
+          "name": "Truist Enjoy Cash Credit Card",
+          "annual_fee": 0,
+          "base_rate": 1,
+          "reward_categories": [
+            {"category": "gas", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Option A structure only; combined $1,000/month cap across gas, utilities, groceries"},
+            {"category": "groceries", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Option A structure only; same $1,000/month combined cap"}
+          ],
+          "special_earning_note": "This card has two possible earning structures chosen at application: \"Option A\" (tiered categories, shown here) or \"Option B\" (flat 1.5% on everything, no categories). If you have Option B, delete the categories above and set base_rate to 1.5 instead.",
+          "relationship_tiered": false,
+          "perks": ["10%-50% Loyalty Cash Bonus when redeeming into a Truist deposit account", "No foreign transaction fees"]
+        }
+      ]
+    },
+    {
+      "id": "fifth_third",
+      "name": "Fifth Third Bank",
+      "cards": [
+        {
+          "id": "fifth_third_cash_back",
+          "name": "Fifth Third 1.67% Cash/Back Credit Card",
+          "annual_fee": 0,
+          "base_rate": 1.67,
+          "reward_categories": [],
+          "special_earning_note": null,
+          "relationship_tiered": false,
+          "perks": ["Partner offers (Lyft, Peacock, Instacart) worth $200+/yr", "No foreign transaction fees", "Mastercard ID Theft Protection"]
+        }
+      ]
+    },
+    {
+      "id": "regions",
+      "name": "Regions Bank",
+      "cards": [
+        {
+          "id": "regions_prestige",
+          "name": "Regions Prestige Visa Credit Card",
+          "annual_fee": 0,
+          "base_rate": 1,
+          "reward_categories": [
+            {"category": "dining", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Also covers entertainment merchants"},
+            {"category": "gas", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Also covers groceries at 2%"}
+          ],
+          "special_earning_note": "Rate can boost to up to 4% via the Regions Rewards Multiplier, based on qualifying deposit balances.",
+          "relationship_tiered": true,
+          "perks": ["Visa Signature benefits suite"]
+        }
+      ]
+    },
+    {
+      "id": "navy_federal",
+      "name": "Navy Federal Credit Union",
+      "cards": [
+        {
+          "id": "navy_federal_cashrewards",
+          "name": "Navy Federal cashRewards / cashRewards Plus",
+          "annual_fee": 0,
+          "base_rate": 1.5,
+          "reward_categories": [],
+          "special_earning_note": "Rate rises to 2% (cashRewards Plus tier) with a qualifying direct deposit relationship at Navy Federal.",
+          "relationship_tiered": true,
+          "perks": ["No foreign transaction fees", "No cash advance fees at Navy Federal ATMs", "Rewards don't expire while account is open"]
+        },
+        {
+          "id": "navy_federal_flagship",
+          "name": "Navy Federal Visa Signature Flagship Rewards",
+          "annual_fee": 49,
+          "base_rate": 2,
+          "reward_categories": [
+            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Airfare, hotels, transit, cruises"}
+          ],
+          "special_earning_note": null,
+          "relationship_tiered": false,
+          "perks": ["Up to $100 Global Entry/TSA PreCheck credit (every 4 yrs)", "Annual Amazon Prime membership reimbursement", "No foreign transaction fees"]
+        }
+      ]
+    },
+    {
+      "id": "penfed",
+      "name": "PenFed Credit Union",
+      "cards": [
+        {
+          "id": "penfed_power_cash_rewards",
+          "name": "PenFed Power Cash Rewards Visa Signature Card",
+          "annual_fee": 0,
+          "base_rate": 1.5,
+          "reward_categories": [],
+          "special_earning_note": "Rate rises to 2% with PenFed Honors Advantage status (military service or a PenFed Access America Checking account).",
+          "relationship_tiered": true,
+          "perks": ["No foreign transaction fees", "Auto rental CDW", "Travel and emergency assistance services"]
+        },
+        {
+          "id": "penfed_pathfinder",
+          "name": "PenFed Pathfinder Rewards Visa Signature Card",
+          "annual_fee": 95,
+          "base_rate": 1.5,
+          "reward_categories": [
+            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "3x for standard members, 4x for PenFed Honors Advantage members"}
+          ],
+          "special_earning_note": "Annual fee fully waived for Honors Advantage members.",
+          "relationship_tiered": true,
+          "perks": ["$100/yr air travel ancillary fee credit", "$100 TSA PreCheck/Global Entry credit (every 4 yrs)", "Priority Pass lounge access", "No foreign transaction fees"]
+        }
+      ]
+    },
+    {
+      "id": "citizens",
+      "name": "Citizens Bank",
+      "cards": [
+        {
+          "id": "citizens_cash_back_plus_legacy",
+          "name": "Citizens Cash Back Plus World Mastercard (legacy)",
+          "annual_fee": 0,
+          "base_rate": 1.8,
+          "reward_categories": [],
+          "special_earning_note": "Flat rate only. 1.9% instead of 1.8% with a Citizens Quest checking account. No longer open to new applicants — relevant only if you already hold one.",
+          "relationship_tiered": true,
+          "perks": ["Extended warranty protection", "Eligible rental car insurance", "Trip cancellation/interruption insurance"]
+        }
+      ]
+    },
+    {
+      "id": "discover",
+      "name": "Discover",
+      "cards": [
+        {
+          "id": "discover_it_cash_back",
+          "name": "Discover it Cash Back",
+          "annual_fee": 0,
+          "base_rate": 1,
+          "reward_categories": [],
+          "special_earning_note": "5% cash back in rotating categories each quarter (up to $1,500/quarter, requires activation). Check the Discover app for current categories — not tracked here.",
+          "relationship_tiered": false,
+          "perks": ["Discover matches all cash back earned in first year"]
+        }
+      ]
+    },
+    {
+      "id": "robinhood",
+      "name": "Robinhood",
+      "cards": [
+        {
+          "id": "robinhood_gold_card",
+          "name": "Robinhood Gold Card",
+          "annual_fee": 0,
+          "base_rate": 3,
+          "reward_categories": [],
+          "special_earning_note": "Full 3% rate requires redeeming cash back as a Robinhood brokerage deposit (statement credits redeem at a lower effective rate, ~2.1%). Requires active Robinhood Gold membership ($5/mo or $50/yr). Also earns 5% via Robinhood Travel portal — not modeled here.",
+          "relationship_tiered": false,
+          "perks": ["No foreign transaction fees (accounts opened before 7/1/2026 only — newer accounts pay a 3% FX fee)", "Stainless steel card construction", "Trip interruption protection"]
+        },
+        {
+          "id": "robinhood_platinum_card",
+          "name": "Robinhood Platinum Card",
+          "annual_fee": 695,
+          "base_rate": 1,
+          "reward_categories": [],
+          "special_earning_note": "Invite-only. Earns 5-10% cash back, but only via Robinhood Travel portal bookings (hotels/cars at 10%, dining/flights booked through the portal at 5%) — not modeled here since this app only ranks direct, real-world spending. Non-portal spending earns just the 1% base rate.",
+          "relationship_tiered": false,
+          "perks": ["$500/yr hotel credit", "$300/yr travel credit", "$250/yr DoorDash credit + DashPass", "$250/yr restaurant credit", "Function Health/Oura/Amazon One Medical subscription credits", "Unlimited Priority Pass lounge access"]
+        }
+      ]
+    },
+    {
+      "id": "apple",
+      "name": "Apple",
+      "cards": [
+        {
+          "id": "apple_card",
+          "name": "Apple Card",
+          "annual_fee": 0,
+          "base_rate": 1,
+          "reward_categories": [
+            {"category": "dining", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Select Apple Pay partner merchants only: Nike, Uber, Uber Eats, Walgreens, Panera, Ace Hardware, Exxon, Mobil"}
+          ],
+          "special_earning_note": "Rate depends on how you pay: 1% base applies to the physical titanium card; any Apple Pay tap-to-pay purchase earns 2% instead of 1%; Apple direct purchases (Apple Store, apple.com, App Store) and the select partner merchants above earn 3% via Apple Pay.",
+          "relationship_tiered": false,
+          "perks": ["Daily Cash paid to Apple Cash on settlement", "No late fees, foreign transaction fees, or annual fee", "Apple Card Family balance sharing"]
+        }
+      ]
+    },
+    {
+      "id": "bilt",
+      "name": "Bilt Rewards",
+      "cards": [
+        {
+          "id": "bilt_card",
+          "name": "Bilt Card (Cardless-issued lineup)",
+          "annual_fee": 0,
+          "base_rate": 1,
+          "reward_categories": [
+            {"category": "dining", "rate": 3, "unit": "points", "cap_or_notes": null},
+            {"category": "travel_direct", "rate": 2, "unit": "points", "cap_or_notes": "Airlines, hotels, car rentals, passenger transit"}
+          ],
+          "special_earning_note": "Rent payments earn 1x point with no card-processing fee (a real perk, since most cards charge ~2-3% to pay rent). Relaunched in 2026 under Cardless with a tiered lineup ranging $0-$495 annual fee — confirm which tier card you actually have, since perks/rates may differ from this no-fee baseline.",
+          "relationship_tiered": false,
+          "perks": ["Pay rent via credit line with no landlord transaction fee", "1:1 point transfers to airline/hotel partners", "Cell phone protection", "No foreign transaction fees"]
+        }
+      ]
+    }
+  ]
+}
