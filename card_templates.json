@@ -1,13 +1,13 @@
 {
   "last_updated": "2026-08-09",
   "category_keywords": {
-    "dining": ["restaurant", "dinner", "lunch", "takeout", "delivery"],
-    "entertainment": ["broadway", "show", "concert", "theater", "movie", "tickets"],
+    "dining": ["restaurant", "dinner", "lunch", "takeout", "delivery", "deliveries"],
+    "entertainment": ["broadway", "show", "concert", "theater", "movie", "tickets", "ticket"],
     "travel_direct": ["flight", "hotel", "airbnb", "rental car", "cruise"],
     "rideshare_transit": ["uber", "lyft", "taxi", "subway", "train", "bus", "toll"],
-    "groceries": ["grocery", "supermarket", "whole foods", "trader joe's"],
+    "groceries": ["grocery", "groceries", "supermarket", "whole foods", "trader joe's"],
     "gas": ["gas", "fuel", "ev charging", "charging station"],
-    "drugstore": ["pharmacy", "cvs", "walgreens"],
+    "drugstore": ["pharmacy", "pharmacies", "cvs", "walgreens"],
     "streaming": ["netflix", "spotify", "hulu", "disney+", "streaming"],
     "warehouse_club": ["costco", "sam's club", "bj's"]
   },
