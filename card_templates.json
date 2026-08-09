@@ -26,7 +26,7 @@
             {"category": "travel_direct", "rate": 4, "unit": "points", "cap_or_notes": "Direct bookings with airlines and hotel providers (not through Chase Travel)"},
             {"category": "dining", "rate": 3, "unit": "points", "cap_or_notes": "Includes eligible delivery and takeout"}
           ],
-          "special_earning_note": "Also earns 8x points via Chase Travel on qualifying hotel bookings — not modeled here since this app only ranks real-world, direct spending.",
+          "special_earning_note": "Portal-only rates (like Chase Travel's 8x) aren't ranked here.",
           "relationship_tiered": false,
           "perks": ["$300 annual travel credit", "Priority Pass Select lounge access", "Primary auto rental CDW", "Trip cancellation/interruption insurance", "DoorDash DashPass access"]
         },
