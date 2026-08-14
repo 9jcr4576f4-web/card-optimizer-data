@@ -1,15 +1,25 @@
 {
   "last_updated": "2026-08-12",
   "category_keywords": {
-    "dining": ["restaurant", "dinner", "lunch", "takeout", "delivery", "deliveries", "dining"],
-    "entertainment": ["broadway", "show", "concert", "theater", "movie", "tickets", "ticket", "entertainment"],
-    "travel_direct": ["flight", "hotel", "airbnb", "rental car", "cruise", "travel direct", "travel booked direct"],
-    "rideshare_transit": ["uber", "lyft", "taxi", "subway", "train", "bus", "toll", "rideshare transit", "rideshare & transit"],
-    "groceries": ["grocery", "groceries", "supermarket", "whole foods", "trader joe's"],
-    "gas": ["gas", "fuel", "ev charging", "charging station"],
-    "drugstore": ["pharmacy", "pharmacies", "cvs", "walgreens", "drugstore"],
-    "streaming": ["netflix", "spotify", "hulu", "disney+", "streaming"],
-    "warehouse_club": ["costco", "sam's club", "bj's", "warehouse club"]
+    "dining": ["restaurant", "dinner", "lunch", "breakfast", "brunch", "takeout", "take out", "delivery", "deliveries", "coffee", "cafe", "bar", "pub", "fast food", "pizza", "diner", "food truck", "dining"],
+    "entertainment": ["broadway", "show", "concert", "theater", "theatre", "movie", "movies", "tickets", "ticket", "museum", "amusement park", "bowling", "arcade", "entertainment"],
+    "travel": ["flight", "airfare", "hotel", "airbnb", "vrbo", "rental car", "cruise", "resort", "travel"],
+    "groceries": ["grocery", "groceries", "supermarket", "whole foods", "trader joe's", "safeway", "kroger", "farmers market", "grocery store"],
+    "gas": ["gas", "fuel", "gas station", "fill up", "ev charging", "charging station", "gasoline"],
+    "rideshare": ["uber", "lyft", "taxi", "cab", "rideshare", "ride share", "subway", "train", "bus", "toll"],
+    "streaming": ["netflix", "spotify", "hulu", "disney+", "disney plus", "max", "hbo", "apple tv", "youtube premium", "streaming"],
+    "drugstore": ["pharmacy", "pharmacies", "cvs", "walgreens", "rite aid", "drugstore", "prescription"],
+    "warehouse": ["costco", "sam's club", "bj's", "warehouse club", "wholesale club"],
+    "online": ["online order", "online shopping", "ebay", "etsy", "amazon"],
+    "department": ["macy's", "nordstrom", "kohl's", "jcpenney", "target", "department store"],
+    "homeimprovement": ["home depot", "lowe's", "hardware store", "home improvement", "paint", "tools", "lumber"],
+    "office": ["office depot", "staples", "office supplies", "printer paper", "printer ink"],
+    "utilities": ["electric bill", "power bill", "water bill", "internet bill", "wifi bill", "phone bill", "cable bill", "utility bill", "utilities"],
+    "fitness": ["gym", "workout", "yoga", "peloton", "gym membership", "pilates", "crossfit", "personal trainer", "spin class", "fitness"],
+    "selfcare": ["haircut", "salon", "nails", "manicure", "pedicure", "massage", "spa", "barber", "facial", "skincare", "self care"],
+    "pet": ["vet", "veterinarian", "dog food", "cat food", "pet store", "pet grooming", "pet care"],
+    "transit": ["parking", "parking garage", "parking meter"],
+    "retail": ["clothes", "clothing", "dress", "shoes", "shirt", "jeans", "sweater", "jacket", "mall", "general retail"]
   },
   "issuers": [
     {
@@ -23,7 +33,7 @@
           "base_rate": 1,
           "base_rate_unit": "points",
           "reward_categories": [
-            {"category": "travel_direct", "rate": 4, "unit": "points", "cap_or_notes": "Direct bookings with airlines and hotel providers (not through Chase Travel)"},
+            {"category": "travel", "rate": 4, "unit": "points", "cap_or_notes": "Direct bookings with airlines and hotel providers (not through Chase Travel)"},
             {"category": "dining", "rate": 3, "unit": "points", "cap_or_notes": "Includes eligible delivery and takeout"}
           ],
           "special_earning_note": "Portal-only rates (like Chase Travel's 8x) aren't ranked here.",
@@ -86,7 +96,7 @@
             {"category": "groceries", "rate": 5, "unit": "cashback_percent", "cap_or_notes": "Amazon.com and Whole Foods; requires active Prime membership ($139/yr)"},
             {"category": "gas", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Direct pump and retail gas stations"},
             {"category": "dining", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Includes takeout and delivery"},
-            {"category": "rideshare_transit", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Rideshares, subways, buses, tolls"}
+            {"category": "rideshare", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Rideshares, subways, buses, tolls"}
           ],
           "special_earning_note": "Also earns 5% via Chase Travel — not modeled here.",
           "relationship_tiered": false,
@@ -111,9 +121,9 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 1.25,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 2, "unit": "points", "cap_or_notes": "Directly with United Airlines"},
+            {"category": "travel", "rate": 2, "unit": "points", "cap_or_notes": "Directly with United Airlines"},
             {"category": "gas", "rate": 2, "unit": "points", "cap_or_notes": "Direct pump and EV charging"},
-            {"category": "rideshare_transit", "rate": 2, "unit": "points", "cap_or_notes": "Local transit and commuting including rideshare, taxicabs, train, tolls, buses"}
+            {"category": "rideshare", "rate": 2, "unit": "points", "cap_or_notes": "Local transit and commuting including rideshare, taxicabs, train, tolls, buses"}
           ],
           "special_earning_note": "Point value defaults to a typical redemption value — adjust it in the card's settings to match how you redeem.",
           "relationship_tiered": false,
@@ -127,7 +137,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 1.25,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Directly with United Airlines"},
+            {"category": "travel", "rate": 3, "unit": "points", "cap_or_notes": "Directly with United Airlines"},
             {"category": "dining", "rate": 2, "unit": "points", "cap_or_notes": "Includes takeout and eligible delivery"}
           ],
           "special_earning_note": "Annual fee is $0 intro for the first year, then $150. Also earns 2x on hotels booked direct; United purchases can earn more when combined with MileagePlus membership — not modeled here. Point value defaults to a typical redemption value — adjust it in the card's settings to match how you redeem.",
@@ -142,7 +152,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 1.25,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Directly with United Airlines"},
+            {"category": "travel", "rate": 3, "unit": "points", "cap_or_notes": "Directly with United Airlines"},
             {"category": "dining", "rate": 2, "unit": "points", "cap_or_notes": "Includes takeout and eligible delivery"},
             {"category": "streaming", "rate": 2, "unit": "points", "cap_or_notes": "Select streaming services"}
           ],
@@ -158,7 +168,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 1.25,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 4, "unit": "points", "cap_or_notes": "Directly with United Airlines"},
+            {"category": "travel", "rate": 4, "unit": "points", "cap_or_notes": "Directly with United Airlines"},
             {"category": "dining", "rate": 2, "unit": "points", "cap_or_notes": "Includes takeout and eligible delivery"}
           ],
           "special_earning_note": "Also earns 5x on Renowned Hotels stays booked through United, and 2x on other travel — not modeled here. Point value defaults to a typical redemption value — adjust it in the card's settings to match how you redeem.",
@@ -173,7 +183,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 1.25,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 2, "unit": "points", "cap_or_notes": "Directly with Southwest Airlines"},
+            {"category": "travel", "rate": 2, "unit": "points", "cap_or_notes": "Directly with Southwest Airlines"},
             {"category": "gas", "rate": 2, "unit": "points", "cap_or_notes": "Combined $5,000/year cap with groceries, then base rate"},
             {"category": "groceries", "rate": 2, "unit": "points", "cap_or_notes": "Combined $5,000/year cap with gas, then base rate"}
           ],
@@ -189,7 +199,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 1.25,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Directly with Southwest Airlines"},
+            {"category": "travel", "rate": 3, "unit": "points", "cap_or_notes": "Directly with Southwest Airlines"},
             {"category": "dining", "rate": 2, "unit": "points", "cap_or_notes": "Combined $8,000/year cap with groceries, then base rate"},
             {"category": "groceries", "rate": 2, "unit": "points", "cap_or_notes": "Combined $8,000/year cap with dining, then base rate"}
           ],
@@ -205,8 +215,8 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 1.25,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Directly with Southwest Airlines"},
-            {"category": "rideshare_transit", "rate": 2, "unit": "points", "cap_or_notes": "Rapid Rewards hotel/car partners, local transit and commuting"},
+            {"category": "travel", "rate": 3, "unit": "points", "cap_or_notes": "Directly with Southwest Airlines"},
+            {"category": "rideshare", "rate": 2, "unit": "points", "cap_or_notes": "Rapid Rewards hotel/car partners, local transit and commuting"},
             {"category": "streaming", "rate": 2, "unit": "points", "cap_or_notes": "Select streaming services"}
           ],
           "special_earning_note": "Point value defaults to a typical redemption value — adjust it in the card's settings to match how you redeem.",
@@ -221,7 +231,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 0.75,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 6, "unit": "points", "cap_or_notes": "Participating Marriott Bonvoy hotels and resorts"},
+            {"category": "travel", "rate": 6, "unit": "points", "cap_or_notes": "Participating Marriott Bonvoy hotels and resorts"},
             {"category": "dining", "rate": 3, "unit": "points", "cap_or_notes": "First $6,000 in combined purchases each year on grocery stores, gas stations, and dining"},
             {"category": "groceries", "rate": 3, "unit": "points", "cap_or_notes": "First $6,000 in combined purchases each year on grocery stores, gas stations, and dining"},
             {"category": "gas", "rate": 3, "unit": "points", "cap_or_notes": "First $6,000 in combined purchases each year on grocery stores, gas stations, and dining"}
@@ -238,7 +248,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 0.75,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Participating Marriott Bonvoy hotels and resorts"},
+            {"category": "travel", "rate": 3, "unit": "points", "cap_or_notes": "Participating Marriott Bonvoy hotels and resorts"},
             {"category": "dining", "rate": 2, "unit": "points", "cap_or_notes": "Restaurants worldwide"},
             {"category": "groceries", "rate": 2, "unit": "points", "cap_or_notes": "Supermarkets"}
           ],
@@ -254,9 +264,9 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 1.6,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 4, "unit": "points", "cap_or_notes": "Directly at Hyatt hotels and resorts"},
+            {"category": "travel", "rate": 4, "unit": "points", "cap_or_notes": "Directly at Hyatt hotels and resorts"},
             {"category": "dining", "rate": 2, "unit": "points", "cap_or_notes": "Restaurants, takeout, and delivery"},
-            {"category": "rideshare_transit", "rate": 2, "unit": "points", "cap_or_notes": "Airline tickets purchased directly, local transit and commuting"}
+            {"category": "rideshare", "rate": 2, "unit": "points", "cap_or_notes": "Airline tickets purchased directly, local transit and commuting"}
           ],
           "special_earning_note": "Also earns 2x points on gym memberships. Point value defaults to a typical redemption value — adjust it in the card's settings to match how you redeem.",
           "relationship_tiered": false,
@@ -270,7 +280,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 0.55,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 10, "unit": "points", "cap_or_notes": "Directly at IHG Hotels & Resorts"},
+            {"category": "travel", "rate": 10, "unit": "points", "cap_or_notes": "Directly at IHG Hotels & Resorts"},
             {"category": "dining", "rate": 5, "unit": "points", "cap_or_notes": "Restaurants, takeout, and delivery"},
             {"category": "gas", "rate": 5, "unit": "points", "cap_or_notes": "Gas stations"}
           ],
@@ -286,7 +296,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 0.55,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 5, "unit": "points", "cap_or_notes": "Directly at IHG Hotels & Resorts"},
+            {"category": "travel", "rate": 5, "unit": "points", "cap_or_notes": "Directly at IHG Hotels & Resorts"},
             {"category": "dining", "rate": 3, "unit": "points", "cap_or_notes": "Restaurants, takeout, and delivery"},
             {"category": "gas", "rate": 3, "unit": "points", "cap_or_notes": "Gas stations"}
           ],
@@ -307,7 +317,7 @@
           "base_rate": 1,
           "base_rate_unit": "points",
           "reward_categories": [
-            {"category": "travel_direct", "rate": 5, "unit": "points", "cap_or_notes": "Airfare booked directly with airlines (or via Amex Travel); capped at $500,000/year combined"}
+            {"category": "travel", "rate": 5, "unit": "points", "cap_or_notes": "Airfare booked directly with airlines (or via Amex Travel); capped at $500,000/year combined"}
           ],
           "special_earning_note": "Prepaid hotels earn 5x only when booked through Amex Travel — not modeled here.",
           "relationship_tiered": false,
@@ -322,7 +332,7 @@
           "reward_categories": [
             {"category": "groceries", "rate": 4, "unit": "points", "cap_or_notes": "U.S. supermarkets, capped at $25,000/year, then 1x"},
             {"category": "dining", "rate": 4, "unit": "points", "cap_or_notes": "Worldwide, includes U.S. takeout and delivery"},
-            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Airfare booked directly with airlines or via Amex Travel"}
+            {"category": "travel", "rate": 3, "unit": "points", "cap_or_notes": "Airfare booked directly with airlines or via Amex Travel"}
           ],
           "special_earning_note": null,
           "relationship_tiered": false,
@@ -338,7 +348,7 @@
             {"category": "groceries", "rate": 6, "unit": "cashback_percent", "cap_or_notes": "U.S. supermarkets, capped at $6,000/year, then 1%"},
             {"category": "streaming", "rate": 6, "unit": "cashback_percent", "cap_or_notes": "Select U.S. streaming subscriptions"},
             {"category": "gas", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "U.S. gas stations"},
-            {"category": "rideshare_transit", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Rideshares, parking, tolls, trains, buses"}
+            {"category": "rideshare", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Rideshares, parking, tolls, trains, buses"}
           ],
           "special_earning_note": null,
           "relationship_tiered": false,
@@ -352,8 +362,8 @@
           "base_rate_unit": "points",
           "reward_categories": [
             {"category": "dining", "rate": 3, "unit": "points", "cap_or_notes": "Worldwide restaurants, including takeout and delivery"},
-            {"category": "rideshare_transit", "rate": 3, "unit": "points", "cap_or_notes": "Trains, taxicabs, rideshares, ferries, tolls, parking, buses, subways"},
-            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Airfare, hotels, cruises, tours, car rentals, campgrounds, vacation rentals booked direct or via third-party travel sites"}
+            {"category": "rideshare", "rate": 3, "unit": "points", "cap_or_notes": "Trains, taxicabs, rideshares, ferries, tolls, parking, buses, subways"},
+            {"category": "travel", "rate": 3, "unit": "points", "cap_or_notes": "Airfare, hotels, cruises, tours, car rentals, campgrounds, vacation rentals booked direct or via third-party travel sites"}
           ],
           "special_earning_note": "Includes an annual statement credit covering CLEAR Plus membership.",
           "relationship_tiered": false,
@@ -408,7 +418,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 0.4,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 7, "unit": "points", "cap_or_notes": "Directly with hotels and resorts in the Hilton portfolio"},
+            {"category": "travel", "rate": 7, "unit": "points", "cap_or_notes": "Directly with hotels and resorts in the Hilton portfolio"},
             {"category": "dining", "rate": 5, "unit": "points", "cap_or_notes": "U.S. restaurants"},
             {"category": "groceries", "rate": 5, "unit": "points", "cap_or_notes": "U.S. supermarkets"},
             {"category": "gas", "rate": 5, "unit": "points", "cap_or_notes": "U.S. gas stations"}
@@ -425,7 +435,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 0.4,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 12, "unit": "points", "cap_or_notes": "Directly with hotels and resorts in the Hilton portfolio"},
+            {"category": "travel", "rate": 12, "unit": "points", "cap_or_notes": "Directly with hotels and resorts in the Hilton portfolio"},
             {"category": "dining", "rate": 6, "unit": "points", "cap_or_notes": "U.S. restaurants"},
             {"category": "groceries", "rate": 6, "unit": "points", "cap_or_notes": "U.S. supermarkets"},
             {"category": "gas", "rate": 6, "unit": "points", "cap_or_notes": "U.S. gas stations"}
@@ -442,7 +452,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 0.4,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 14, "unit": "points", "cap_or_notes": "Directly with hotels and resorts in the Hilton portfolio"},
+            {"category": "travel", "rate": 14, "unit": "points", "cap_or_notes": "Directly with hotels and resorts in the Hilton portfolio"},
             {"category": "dining", "rate": 7, "unit": "points", "cap_or_notes": "U.S. restaurants"}
           ],
           "special_earning_note": "Also earns 7x points on flights booked directly with airlines or Amex Travel, and car rentals booked directly from select companies. Point value defaults to a typical redemption value — adjust it in the card's settings to match how you redeem.",
@@ -457,7 +467,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 1.2,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 2, "unit": "points", "cap_or_notes": "Eligible purchases made directly with Delta"},
+            {"category": "travel", "rate": 2, "unit": "points", "cap_or_notes": "Eligible purchases made directly with Delta"},
             {"category": "dining", "rate": 2, "unit": "points", "cap_or_notes": "Restaurants worldwide, including takeout and delivery"},
             {"category": "groceries", "rate": 2, "unit": "points", "cap_or_notes": "U.S. supermarkets"}
           ],
@@ -473,7 +483,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 1.2,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Eligible purchases made directly with Delta and direct hotel bookings"},
+            {"category": "travel", "rate": 3, "unit": "points", "cap_or_notes": "Eligible purchases made directly with Delta and direct hotel bookings"},
             {"category": "dining", "rate": 2, "unit": "points", "cap_or_notes": "Restaurants worldwide, including takeout and delivery"},
             {"category": "groceries", "rate": 2, "unit": "points", "cap_or_notes": "U.S. supermarkets"}
           ],
@@ -489,7 +499,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 1.2,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Eligible purchases made directly with Delta"}
+            {"category": "travel", "rate": 3, "unit": "points", "cap_or_notes": "Eligible purchases made directly with Delta"}
           ],
           "special_earning_note": "Point value defaults to a typical redemption value — adjust it in the card's settings to match how you redeem.",
           "relationship_tiered": false,
@@ -503,7 +513,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 0.75,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 6, "unit": "points", "cap_or_notes": "Participating Marriott Bonvoy hotels and resorts"},
+            {"category": "travel", "rate": 6, "unit": "points", "cap_or_notes": "Participating Marriott Bonvoy hotels and resorts"},
             {"category": "dining", "rate": 4, "unit": "points", "cap_or_notes": "Restaurants worldwide, up to $15,000 per year combined with groceries, then 2x"},
             {"category": "groceries", "rate": 4, "unit": "points", "cap_or_notes": "U.S. supermarkets, up to $15,000 per year combined with dining, then 2x"}
           ],
@@ -519,7 +529,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 0.75,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 6, "unit": "points", "cap_or_notes": "Participating Marriott Bonvoy hotels and resorts"},
+            {"category": "travel", "rate": 6, "unit": "points", "cap_or_notes": "Participating Marriott Bonvoy hotels and resorts"},
             {"category": "dining", "rate": 3, "unit": "points", "cap_or_notes": "Restaurants worldwide"}
           ],
           "special_earning_note": "Earns 3x points on flights booked directly with airlines. Point value defaults to a typical redemption value — adjust it in the card's settings to match how you redeem.",
@@ -616,7 +626,7 @@
           "base_rate": 1,
           "base_rate_unit": "points",
           "reward_categories": [
-            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Booked directly with airlines and hotel chains"},
+            {"category": "travel", "rate": 3, "unit": "points", "cap_or_notes": "Booked directly with airlines and hotel chains"},
             {"category": "gas", "rate": 3, "unit": "points", "cap_or_notes": "Includes EV charging stations"},
             {"category": "groceries", "rate": 3, "unit": "points", "cap_or_notes": "U.S. and international grocery stores"},
             {"category": "dining", "rate": 3, "unit": "points", "cap_or_notes": "Worldwide"}
@@ -645,7 +655,7 @@
           "reward_categories": [
             {"category": "gas", "rate": 4, "unit": "cashback_percent", "cap_or_notes": "Worldwide, capped at $7,000/year combined, then 1%"},
             {"category": "dining", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Also covers airfare, hotels, car rentals, cruise lines at 3%"},
-            {"category": "warehouse_club", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Costco and Costco.com purchases; requires active Costco membership ($65/yr)"}
+            {"category": "warehouse", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Costco and Costco.com purchases; requires active Costco membership ($65/yr)"}
           ],
           "special_earning_note": "Cash back is paid out annually as a Costco reward certificate, not as ongoing statement credit.",
           "relationship_tiered": false,
@@ -674,7 +684,7 @@
           "reward_categories": [
             {"category": "groceries", "rate": 3, "unit": "points", "cap_or_notes": null},
             {"category": "gas", "rate": 3, "unit": "points", "cap_or_notes": null},
-            {"category": "rideshare_transit", "rate": 3, "unit": "points", "cap_or_notes": null},
+            {"category": "rideshare", "rate": 3, "unit": "points", "cap_or_notes": null},
             {"category": "dining", "rate": 2, "unit": "points", "cap_or_notes": null}
           ],
           "special_earning_note": "Also earns 5x on hotels, car rentals, and attractions booked through cititravel.com (portal rates aren't ranked here), and 3x on a self-selected category of your choice — default is streaming. Adjust if you've selected a different category.",
@@ -689,7 +699,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 1.4,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 2, "unit": "points", "cap_or_notes": "Eligible American Airlines purchases"},
+            {"category": "travel", "rate": 2, "unit": "points", "cap_or_notes": "Eligible American Airlines purchases"},
             {"category": "dining", "rate": 2, "unit": "points", "cap_or_notes": "Restaurants"},
             {"category": "gas", "rate": 2, "unit": "points", "cap_or_notes": "Gas stations"}
           ],
@@ -705,7 +715,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 1.4,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 4, "unit": "points", "cap_or_notes": "Eligible American Airlines purchases"}
+            {"category": "travel", "rate": 4, "unit": "points", "cap_or_notes": "Eligible American Airlines purchases"}
           ],
           "special_earning_note": "Also earns 12x miles on hotels and car rentals booked through aa.com, effective Aug 23, 2026. Point value defaults to a typical redemption value — adjust it in the card's settings to match how you redeem.",
           "relationship_tiered": false,
@@ -719,7 +729,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 1.4,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 2, "unit": "points", "cap_or_notes": "Eligible American Airlines purchases"},
+            {"category": "travel", "rate": 2, "unit": "points", "cap_or_notes": "Eligible American Airlines purchases"},
             {"category": "groceries", "rate": 2, "unit": "points", "cap_or_notes": "Grocery stores and supermarkets"}
           ],
           "special_earning_note": "Point value defaults to a typical redemption value — adjust it in the card's settings to match how you redeem.",
@@ -751,9 +761,9 @@
           "base_rate_unit": "points",
           "reward_categories": [
             {"category": "dining", "rate": 3, "unit": "points", "cap_or_notes": "Restaurants, takeout, and catering"},
-            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Airlines, hotels, cruises, car rentals"},
+            {"category": "travel", "rate": 3, "unit": "points", "cap_or_notes": "Airlines, hotels, cruises, car rentals"},
             {"category": "gas", "rate": 3, "unit": "points", "cap_or_notes": "Gas stations and EV charging"},
-            {"category": "rideshare_transit", "rate": 3, "unit": "points", "cap_or_notes": "Subways, passenger trains, taxis, limousines, rideshares, ferries, tolls, parking"},
+            {"category": "rideshare", "rate": 3, "unit": "points", "cap_or_notes": "Subways, passenger trains, taxis, limousines, rideshares, ferries, tolls, parking"},
             {"category": "streaming", "rate": 3, "unit": "points", "cap_or_notes": "Select streaming services"}
           ],
           "special_earning_note": "Also earns 3x points on phone plans.",
@@ -767,7 +777,7 @@
           "base_rate": 1,
           "base_rate_unit": "points",
           "reward_categories": [
-            {"category": "travel_direct", "rate": 5, "unit": "points", "cap_or_notes": "5x on hotels, 4x on airlines booked directly"},
+            {"category": "travel", "rate": 5, "unit": "points", "cap_or_notes": "5x on hotels, 4x on airlines booked directly"},
             {"category": "dining", "rate": 3, "unit": "points", "cap_or_notes": "Restaurants"}
           ],
           "special_earning_note": "Earns 5x points on hotels direct, 4x on airlines direct, and 3x on other travel purchases.",
@@ -793,7 +803,7 @@
           "base_rate": 1,
           "base_rate_unit": "points",
           "reward_categories": [
-            {"category": "travel_direct", "rate": 10, "unit": "points", "cap_or_notes": "Participating Choice Hotels properties"},
+            {"category": "travel", "rate": 10, "unit": "points", "cap_or_notes": "Participating Choice Hotels properties"},
             {"category": "gas", "rate": 5, "unit": "points", "cap_or_notes": "Gas stations"},
             {"category": "groceries", "rate": 5, "unit": "points", "cap_or_notes": "Grocery stores"}
           ],
@@ -808,7 +818,7 @@
           "base_rate": 1,
           "base_rate_unit": "points",
           "reward_categories": [
-            {"category": "travel_direct", "rate": 5, "unit": "points", "cap_or_notes": "Participating Choice Hotels properties"},
+            {"category": "travel", "rate": 5, "unit": "points", "cap_or_notes": "Participating Choice Hotels properties"},
             {"category": "gas", "rate": 3, "unit": "points", "cap_or_notes": "Gas stations"},
             {"category": "groceries", "rate": 3, "unit": "points", "cap_or_notes": "Grocery stores"}
           ],
@@ -897,7 +907,7 @@
           "base_rate": 1,
           "base_rate_unit": "points",
           "reward_categories": [
-            {"category": "travel_direct", "rate": 4, "unit": "points", "cap_or_notes": "Travel purchases"},
+            {"category": "travel", "rate": 4, "unit": "points", "cap_or_notes": "Travel purchases"},
             {"category": "gas", "rate": 4, "unit": "points", "cap_or_notes": "Gas stations and EV charging up to $1,000 per quarter combined, then 1x"},
             {"category": "dining", "rate": 2, "unit": "points", "cap_or_notes": "Dining purchases"},
             {"category": "groceries", "rate": 2, "unit": "points", "cap_or_notes": "Grocery stores"},
@@ -914,7 +924,7 @@
           "base_rate": 1,
           "base_rate_unit": "points",
           "reward_categories": [
-            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Direct travel bookings (airways, hotels, car rental, cruise lines)"}
+            {"category": "travel", "rate": 3, "unit": "points", "cap_or_notes": "Direct travel bookings (airways, hotels, car rental, cruise lines)"}
           ],
           "special_earning_note": "Earns 3x points on mobile wallet purchases (Apple Pay, Google Pay, Samsung Pay) — not modeled in standard category keys. Earns 5x points via Altitude Travel Center. No longer open to new applicants; existing cardholders keep earning as shown.",
           "relationship_tiered": false,
@@ -1044,7 +1054,7 @@
           "base_rate": 2,
           "base_rate_unit": "points",
           "reward_categories": [
-            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Airfare, hotels, transit, cruises"}
+            {"category": "travel", "rate": 3, "unit": "points", "cap_or_notes": "Airfare, hotels, transit, cruises"}
           ],
           "special_earning_note": null,
           "relationship_tiered": false,
@@ -1074,7 +1084,7 @@
             {"category": "dining", "rate": 3, "unit": "points", "cap_or_notes": "Restaurants and food delivery"},
             {"category": "groceries", "rate": 3, "unit": "points", "cap_or_notes": "Supermarkets"},
             {"category": "gas", "rate": 3, "unit": "points", "cap_or_notes": "Gas stations"},
-            {"category": "rideshare_transit", "rate": 3, "unit": "points", "cap_or_notes": "Transit purchases"}
+            {"category": "rideshare", "rate": 3, "unit": "points", "cap_or_notes": "Transit purchases"}
           ],
           "special_earning_note": null,
           "relationship_tiered": false,
@@ -1104,7 +1114,7 @@
           "base_rate": 1.5,
           "base_rate_unit": "points",
           "reward_categories": [
-            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "3x for standard members, 4x for PenFed Honors Advantage members"}
+            {"category": "travel", "rate": 3, "unit": "points", "cap_or_notes": "3x for standard members, 4x for PenFed Honors Advantage members"}
           ],
           "special_earning_note": "Annual fee fully waived for Honors Advantage members.",
           "relationship_tiered": true,
@@ -1250,7 +1260,7 @@
           "base_rate_unit": "points",
           "reward_categories": [
             {"category": "dining", "rate": 3, "unit": "points", "cap_or_notes": null},
-            {"category": "travel_direct", "rate": 2, "unit": "points", "cap_or_notes": "Airlines, hotels, car rentals, passenger transit"}
+            {"category": "travel", "rate": 2, "unit": "points", "cap_or_notes": "Airlines, hotels, car rentals, passenger transit"}
           ],
           "special_earning_note": "Rent payments earn 1x point with no card-processing fee (a real perk, since most cards charge ~2-3% to pay rent). Relaunched in 2026 under Cardless with a tiered lineup ranging $0-$495 annual fee — confirm which tier card you actually have, since perks/rates may differ from this no-fee baseline.",
           "relationship_tiered": false,
@@ -1318,7 +1328,7 @@
           "base_rate_unit": "cashback_percent",
           "reward_categories": [
             {"category": "groceries", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Grocery stores and wholesale clubs up to $2,500 combined per quarter with choice category, then 1%"},
-            {"category": "warehouse_club", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Grocery stores and wholesale clubs up to $2,500 combined per quarter with choice category, then 1%"}
+            {"category": "warehouse", "rate": 2, "unit": "cashback_percent", "cap_or_notes": "Grocery stores and wholesale clubs up to $2,500 combined per quarter with choice category, then 1%"}
           ],
           "special_earning_note": "Earns 3% cash back in a choice category (gas/EV charging, online shopping, dining, travel, drugstores, or home improvement) up to $2,500/qtr combined. Rates boosted by 10%-75% for Preferred Rewards members — baseline modeled here.",
           "relationship_tiered": true,
@@ -1353,7 +1363,7 @@
           "base_rate": 1.5,
           "base_rate_unit": "points",
           "reward_categories": [
-            {"category": "travel_direct", "rate": 2, "unit": "points", "cap_or_notes": "Travel purchases"},
+            {"category": "travel", "rate": 2, "unit": "points", "cap_or_notes": "Travel purchases"},
             {"category": "dining", "rate": 2, "unit": "points", "cap_or_notes": "Dining purchases"}
           ],
           "special_earning_note": "Rates boosted by 25%-75% for Preferred Rewards members — baseline modeled here.",
@@ -1367,7 +1377,7 @@
           "base_rate": 1.5,
           "base_rate_unit": "points",
           "reward_categories": [
-            {"category": "travel_direct", "rate": 2, "unit": "points", "cap_or_notes": "Travel purchases"},
+            {"category": "travel", "rate": 2, "unit": "points", "cap_or_notes": "Travel purchases"},
             {"category": "dining", "rate": 2, "unit": "points", "cap_or_notes": "Dining purchases"}
           ],
           "special_earning_note": "Rates boosted by 10%-75% for Preferred Rewards members. 20% airfare discount when paying with points via Travel Center.",
@@ -1382,7 +1392,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 1.55,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Eligible Alaska Airlines purchases"}
+            {"category": "travel", "rate": 3, "unit": "points", "cap_or_notes": "Eligible Alaska Airlines purchases"}
           ],
           "special_earning_note": "Also earns 2x points on gas, EV charging, cable, streaming, and local transit. Alaska's loyalty program was rebranded from Mileage Plan to Atmos Rewards. Point value defaults to a typical redemption value — adjust it in the card's settings to match how you redeem.",
           "relationship_tiered": false,
@@ -1402,7 +1412,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 1.4,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 2, "unit": "points", "cap_or_notes": "Eligible American Airlines purchases"}
+            {"category": "travel", "rate": 2, "unit": "points", "cap_or_notes": "Eligible American Airlines purchases"}
           ],
           "special_earning_note": "No longer open to new applicants; existing cardholders keep earning as shown. Point value defaults to a typical redemption value — adjust it in the card's settings to match how you redeem.",
           "relationship_tiered": false,
@@ -1416,7 +1426,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 1.35,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 6, "unit": "points", "cap_or_notes": "Eligible JetBlue purchases"},
+            {"category": "travel", "rate": 6, "unit": "points", "cap_or_notes": "Eligible JetBlue purchases"},
             {"category": "dining", "rate": 2, "unit": "points", "cap_or_notes": "Restaurants"},
             {"category": "groceries", "rate": 2, "unit": "points", "cap_or_notes": "Grocery stores"}
           ],
@@ -1432,7 +1442,7 @@
           "base_rate_unit": "points",
           "default_point_value_cents": 1.35,
           "reward_categories": [
-            {"category": "travel_direct", "rate": 3, "unit": "points", "cap_or_notes": "Eligible JetBlue purchases"},
+            {"category": "travel", "rate": 3, "unit": "points", "cap_or_notes": "Eligible JetBlue purchases"},
             {"category": "dining", "rate": 2, "unit": "points", "cap_or_notes": "Restaurants"},
             {"category": "groceries", "rate": 2, "unit": "points", "cap_or_notes": "Grocery stores"}
           ],
@@ -1447,7 +1457,7 @@
           "base_rate": 1,
           "base_rate_unit": "points",
           "reward_categories": [
-            {"category": "travel_direct", "rate": 6, "unit": "points", "cap_or_notes": "Eligible Wyndham hotel purchases"},
+            {"category": "travel", "rate": 6, "unit": "points", "cap_or_notes": "Eligible Wyndham hotel purchases"},
             {"category": "dining", "rate": 4, "unit": "points", "cap_or_notes": "Restaurants"},
             {"category": "groceries", "rate": 4, "unit": "points", "cap_or_notes": "Grocery stores"},
             {"category": "gas", "rate": 4, "unit": "points", "cap_or_notes": "Gas stations"}
@@ -1463,7 +1473,7 @@
           "base_rate": 1,
           "base_rate_unit": "points",
           "reward_categories": [
-            {"category": "travel_direct", "rate": 5, "unit": "points", "cap_or_notes": "Eligible Wyndham hotel purchases"},
+            {"category": "travel", "rate": 5, "unit": "points", "cap_or_notes": "Eligible Wyndham hotel purchases"},
             {"category": "gas", "rate": 5, "unit": "points", "cap_or_notes": "Gas stations"},
             {"category": "dining", "rate": 2, "unit": "points", "cap_or_notes": "Restaurants"},
             {"category": "groceries", "rate": 2, "unit": "points", "cap_or_notes": "Grocery stores"}
@@ -1548,7 +1558,7 @@
           "base_rate_unit": "cashback_percent",
           "reward_categories": [
             {"category": "groceries", "rate": 5, "unit": "cashback_percent", "cap_or_notes": "Grocery store purchases up to maximum $10,000 spent per calendar year combined in 5%/3% categories, then 1%"},
-            {"category": "warehouse_club", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Wholesale clubs up to maximum $10,000 spent per calendar year combined with groceries/gas, then 1%"},
+            {"category": "warehouse", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Wholesale clubs up to maximum $10,000 spent per calendar year combined with groceries/gas, then 1%"},
             {"category": "gas", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Gas stations and EV charging up to maximum $10,000 spent per calendar year combined with groceries/warehouse clubs, then 1%"}
           ],
           "special_earning_note": "Also earns 3% cash back on AAA purchases and streaming services.",
@@ -1563,7 +1573,7 @@
           "base_rate_unit": "cashback_percent",
           "reward_categories": [
             {"category": "gas", "rate": 5, "unit": "cashback_percent", "cap_or_notes": "Gas stations and EV charging up to maximum $7,000 spent per calendar year, then 1%"},
-            {"category": "travel_direct", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Travel purchases booked direct"},
+            {"category": "travel", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Travel purchases booked direct"},
             {"category": "dining", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Restaurants"},
             {"category": "groceries", "rate": 3, "unit": "cashback_percent", "cap_or_notes": "Grocery stores"}
           ],
