@@ -797,6 +797,22 @@
           "perks": ["0% intro APR for up to 21 months", "Up to $600 cell phone protection"]
         },
         {
+          "id": "wells_fargo_attune",
+          "name": "Wells Fargo Attune Card (also marketed as Attune World Elite Mastercard)",
+          "annual_fee": 0,
+          "base_rate": 1,
+          "base_rate_unit": "cashback_percent",
+          "reward_categories": [
+            {"category": "fitness", "rate": 4, "unit": "cashback_percent", "cap_or_notes": null},
+            {"category": "selfcare", "rate": 4, "unit": "cashback_percent", "cap_or_notes": null},
+            {"category": "entertainment", "rate": 4, "unit": "cashback_percent", "cap_or_notes": null},
+            {"category": "streaming", "rate": 4, "unit": "cashback_percent", "cap_or_notes": null}
+          ],
+          "special_earning_note": "Also earns 4% on pet supplies, EV charging, public transit, and thrift stores — but not vets, gas stations, parking, or rideshare. Closed to new applicants as of June 15, 2026; only relevant if you already hold one.",
+          "relationship_tiered": false,
+          "perks": []
+        },
+        {
           "id": "choice_privileges_select",
           "name": "Choice Privileges Select Mastercard",
           "annual_fee": 95,
